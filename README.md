@@ -120,13 +120,11 @@ tool, specifically to avoid extra RAM overhead on the lab machine.
 
 ## Attack Scenario
 
-**Chosen chain: Discovery + Lateral Movement** — deliberately picked over a Credential Access or
-Persistence chain so that all three labs in the portfolio cover different MITRE techniques with
-zero overlap.
+**Chosen chain: ** — "Discovery + Lateral Movement was chosen because it demonstrates correlation-based detection clearly, without relying on a single indicator."
 
 ```bash
 impacket-psexec -service-name PSEXESVC -remote-binary-name PSEXESVC \
-    pentest:'P@ssw0rd123!'@192.168.56.1
+    pentest:'<LAB_PASSWORD>'@<TARGET_IP>
 ```
 
 Once a shell is obtained (as `NT AUTHORITY\SYSTEM`), a small, realistic set of recon commands is
