@@ -150,10 +150,7 @@ net localgroup administrators
 
 Clean session exit — Impacket automatically removes the temporary service and binary.
 
-A known Windows behavior had to be handled here: local (non-built-in-Administrator) accounts get a
-filtered token over the network by default, which blocks ADMIN$/C$ write access. This was resolved
-by setting `LocalAccountTokenFilterPolicy=1` in the registry on the target — itself a MITRE
-T1112-relevant artifact worth noting.
+
 
 ---
 
