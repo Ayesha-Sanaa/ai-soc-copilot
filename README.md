@@ -120,7 +120,7 @@ tool, specifically to avoid extra RAM overhead on the lab machine.
 
 ## Attack Scenario
 
-**Chosen chain: ** — "Discovery + Lateral Movement was chosen because it demonstrates correlation-based detection clearly, without relying on a single indicator."
+**Chosen chain:** — "Discovery + Lateral Movement was chosen because it demonstrates correlation-based detection clearly, without relying on a single indicator."
 
 ```bash
 impacket-psexec -service-name PSEXESVC -remote-binary-name PSEXESVC \
